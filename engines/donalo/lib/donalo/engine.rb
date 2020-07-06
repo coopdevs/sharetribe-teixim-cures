@@ -205,10 +205,7 @@ module Donalo
 
             transaction_id = result.data[:transaction].id
 
-            Donalo::StockUpdater.new(
-              transaction_id: transaction_id,
-              rollback: false
-            ).update
+            update_stock!(transaction_id, rollback: false)
 
             result
           end
@@ -221,25 +218,32 @@ module Donalo
               sender_id: sender_id
             )
 
-            Donalo::StockUpdater.new(
-              transaction_id: transaction_id,
-              rollback: true
-            ).update
+            update_stock!(transaction_id, rollback: true)
 
             result
           end
 
           def complete_preauthorization(community_id:, transaction_id:, message: nil, sender_id: nil)
-            Donalo::AvailabilityUpdater.new(
-              transaction_id: transaction_id
-            ).update
-
             original_complete_preauthorization(
               community_id: community_id,
               transaction_id: transaction_id,
               message: message,
               sender_id: sender_id
             )
+          end
+
+          private
+
+          def update_stock!(transaction_id, rollback:)
+            Donalo::StockUpdater.new(
+              transaction_id: transaction_id,
+              rollback: rollback
+            ).update
+
+            Donalo::AvailabilityUpdater.new(
+              transaction_id: transaction_id
+            ).update
+
           end
         end
       end

@@ -36,6 +36,8 @@ module Donalo
     end
 
     def current_quantity
+      return 1 unless stock
+
       stock.numeric_value.to_i
     end
   end
