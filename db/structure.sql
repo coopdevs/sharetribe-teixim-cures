@@ -984,6 +984,34 @@ CREATE TABLE `marketplace_trials` (
   KEY `index_marketplace_trials_on_created_at` (`created_at`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
+DROP TABLE IF EXISTS `masked_people`;
+/*!50001 DROP VIEW IF EXISTS `masked_people`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE VIEW `masked_people` AS SELECT 
+ 1 AS `id`,
+ 1 AS `uuid`,
+ 1 AS `created_at`,
+ 1 AS `updated_at`,
+ 1 AS `is_admin`,
+ 1 AS `locale`,
+ 1 AS `preferences`,
+ 1 AS `active_days_count`,
+ 1 AS `last_page_load_date`,
+ 1 AS `test_group_number`,
+ 1 AS `username`,
+ 1 AS `reset_password_sent_at`,
+ 1 AS `remember_created_at`,
+ 1 AS `sign_in_count`,
+ 1 AS `current_sign_in_at`,
+ 1 AS `last_sign_in_at`,
+ 1 AS `given_name`,
+ 1 AS `family_name`,
+ 1 AS `display_name`,
+ 1 AS `phone_number`,
+ 1 AS `description`,
+ 1 AS `image_updated_at`*/;
+SET character_set_client = @saved_cs_client;
 DROP TABLE IF EXISTS `menu_link_translations`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
@@ -1531,6 +1559,18 @@ CREATE TABLE `transactions` (
   KEY `community_starter_state` (`community_id`,`starter_id`,`current_state`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
+/*!50001 DROP VIEW IF EXISTS `masked_people`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8 */;
+/*!50001 SET character_set_results     = utf8 */;
+/*!50001 SET collation_connection      = utf8_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50001 VIEW `masked_people` AS select `people`.`id` AS `id`,`people`.`uuid` AS `uuid`,`people`.`created_at` AS `created_at`,`people`.`updated_at` AS `updated_at`,`people`.`is_admin` AS `is_admin`,`people`.`locale` AS `locale`,`people`.`preferences` AS `preferences`,`people`.`active_days_count` AS `active_days_count`,`people`.`last_page_load_date` AS `last_page_load_date`,`people`.`test_group_number` AS `test_group_number`,`people`.`username` AS `username`,`people`.`reset_password_sent_at` AS `reset_password_sent_at`,`people`.`remember_created_at` AS `remember_created_at`,`people`.`sign_in_count` AS `sign_in_count`,`people`.`current_sign_in_at` AS `current_sign_in_at`,`people`.`last_sign_in_at` AS `last_sign_in_at`,`people`.`given_name` AS `given_name`,`people`.`family_name` AS `family_name`,`people`.`display_name` AS `display_name`,`people`.`phone_number` AS `phone_number`,`people`.`description` AS `description`,`people`.`image_updated_at` AS `image_updated_at` from `people` */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -2439,5 +2479,7 @@ INSERT INTO `schema_migrations` (version) VALUES
 ('20200213130051'),
 ('20200224080321'),
 ('20200608104047'),
-('20200609150707');
+('20200609150707'),
+('20200706144036');
+
 

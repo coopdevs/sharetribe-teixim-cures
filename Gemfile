@@ -183,3 +183,5 @@ gem "select2-rails"
 gem "cocoon"
 
 gem 'donalo', path: 'engines/donalo'
+gem 'scenic'
+gem 'scenic-mysql_adapter'
