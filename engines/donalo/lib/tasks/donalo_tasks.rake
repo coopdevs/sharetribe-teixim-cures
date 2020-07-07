@@ -77,7 +77,7 @@ namespace :donalo do
     translate(locale: 'ca', key: 'conversations.confirm.cancel', value: "Obrir incidència")
 
     translate(locale: 'es', key: 'conversations.message.rejected_request', value: "rechazó la solicitud")
-    translate(locale: 'es', key: 'conversations.message.rejected_request', value: "ha rebutjat la sol·licitud")
+    translate(locale: 'ca', key: 'conversations.message.rejected_request', value: "ha rebutjat la sol·licitud")
 
     translate(locale: 'es', key: 'conversations.accept.total_label', value: "Total (IVA incluido):")
     translate(locale: 'ca', key: 'conversations.accept.total_label', value: "Total (IVA inclòs):")
