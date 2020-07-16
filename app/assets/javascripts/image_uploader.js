@@ -345,7 +345,8 @@ window.ST.imageUploader = function(listings, opts) {
       // Enable image resizing, except for Android and Opera,
       // which actually support image resizing, but fail to
       // send Blob objects via XHR requests:
-      disableImageResize: /Android(?!.*Chrome)|Opera/.test(window.navigator && navigator.userAgent)
+      disableImageResize: /Android(?!.*Chrome)|Opera/.test(window.navigator && navigator.userAgent),
+      maxFileSize: 10000000 // Duplicate from config/config.yml and the `max_image_filesize` env var.
     };
 
     var fileuploadOptions = _.extend(fileuploadDefaultOptions, additionalOptions);
