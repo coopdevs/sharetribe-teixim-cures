@@ -12,6 +12,7 @@ development:
   # Add local `development` environment configuration overrides here
   domain: "0.0.0.0:3000"
   external_plan_service_in_use: true
+  max_image_filesize: 10000000
 
 test:
   # Add local `test` environment configuration overrides here
