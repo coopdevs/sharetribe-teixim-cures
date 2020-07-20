@@ -11,7 +11,7 @@
         $("#quantity").attr("min", data.minimumRequiredUnits);
         $("#quantity").val(data.minimumRequiredUnits);
 
-        if (data.availableUnits === 0) {
+        if (data.availableUnits === 0 || data.availableUnits < data.minimumRequiredUnits) {
           $('.enabled-book-button')
             .removeClass('enabled-book-button')
             .addClass('disabled-book-button')

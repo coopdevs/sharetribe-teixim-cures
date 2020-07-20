@@ -137,6 +137,7 @@ module Donalo
         ::Listing,
         ::ListingsController,
         ::TransactionService::Transaction,
+        ::PreauthorizeTransactionsController,
       ]
 
       class ::ListingsController
@@ -245,6 +246,17 @@ module Donalo
             ).update
 
           end
+        end
+      end
+
+      class ::PreauthorizeTransactionsController
+        before_action :ensure_stock
+
+        def ensure_stock
+          return if listing.available_units >= params[:quantity].to_i
+
+          flash[:error] = I18n.t('donalo.out_of_stock')
+          return redirect_to listing_path(listing)
         end
       end
     end
