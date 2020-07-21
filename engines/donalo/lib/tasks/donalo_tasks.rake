@@ -148,8 +148,8 @@ namespace :donalo do
     translate(locale: 'es', key: 'emails.transaction_disputed.you_must_now_decide', value: "Debes decidir si un reembolso es válido o no. Si un reembolso no es valido, puede descartar la incidencia. Puedes %{learn_more_link}.")
     translate(locale: 'ca', key: 'emails.transaction_disputed.you_must_now_decide', value: "Has de decidir si un reemborsament és vàlid o no. Si un reemborsament no és vàlid, pot descartar la incidència. Pots %{learn_more_link}.")
 
-    translate(locale: 'es', key: 'emails.transaction_refunded.subject', value: "La orden has sido marcada como reembolsada. El equipo de %{service_name} ha aprobado la solicitud de %{buyer}")
-    translate(locale: 'ca', key: 'emails.transaction_refunded.subject', value: "L'ordre has estat marcada com a reemborsada. L'equip de %{service_name} ha aprovat la sol·licitud de %{buyer}")
+    translate(locale: 'es', key: 'emails.transaction_refunded.subject', value: "La orden ha sido marcada como reembolsada. El equipo de %{service_name} ha aprobado la solicitud de %{buyer}")
+    translate(locale: 'ca', key: 'emails.transaction_refunded.subject', value: "L'ordre ha estat marcada com a reemborsada. L'equip de %{service_name} ha aprovat la sol·licitud de %{buyer}")
 
     translate(locale: 'es', key: 'emails.transaction_refunded.marketplace_team_has_approved_the_cancellation', value: "El equipo de %{service_name} ha validado la incidencia de %{transaction_link} y ha marcado el pago como reembolsado.")
     translate(locale: 'ca', key: 'emails.transaction_refunded.marketplace_team_has_approved_the_cancellation', value: "l'equip de %{service_name} ha validat la incidència de %{transaction_link} i ha marcat el pagament com reemborsat.")
