@@ -7,8 +7,8 @@ namespace :donalo do
     translate(locale: 'es', key: 'listings.listing_actions.marketplace_fees_may_apply', value: "%{service_name} aplica una cuota de servicio por transacción que contribuye a mantener la plataforma")
     translate(locale: 'ca', key: 'listings.listing_actions.marketplace_fees_may_apply', value: "%{service_name} aplica una quota de servei per transacció que contribueix a mantenir la plataforma")
 
-    translate(locale: 'es', key: 'settings.profile.location_description', value: "Esta ubicación debe ser dónde se encuentra el producto y dónde el receptor del mismo irá a buscarlo. Puedes dar tu ubicación exacta o indicar sólo tu código postal.")
-    translate(locale: 'ca', key: 'settings.profile.location_description', value: "Aquesta ubicació ha de ser on es troba el producte i on el receptor de la mateixa anirà a buscar-lo. Pots donar la teva ubicació exacta o indicar només el teu codi postal.")
+    translate(locale: 'es', key: 'settings.profile.location_description', value: "Esta ubicación debe ser dónde se encuentra el producto y dónde el receptor del mismo irá a buscarlo. Puedes dar tu ubicación exacta o indicar sólo tu código postal. Esta ubicación debe ser dónde se encuentra el producto y dónde el receptor del mismo irá a buscarlo.")
+    translate(locale: 'ca', key: 'settings.profile.location_description', value: "Aquesta ubicació ha de ser on es troba el producte i on el receptor de la mateixa anirà a buscar-lo. Pots donar la teva ubicació exacta o indicar només el teu codi postal. Aquesta ubicació ha de ser on es troba el producte i on el receptor de la mateixa anirà a buscar-lo.")
 
     translate(locale: 'es', key: 'settings.notifications.email_about_new_payments', value: "...recibo una nueva solicitud")
     translate(locale: 'ca', key: 'settings.notifications.email_about_new_payments', value: "...rebo una nova sol·licitud")
@@ -81,6 +81,9 @@ namespace :donalo do
 
     translate(locale: 'es', key: 'conversations.accept.total_label', value: "Total (IVA incluido):")
     translate(locale: 'ca', key: 'conversations.accept.total_label', value: "Total (IVA inclòs):")
+
+    translate(locale: 'es', key: 'conversations.accept.order_by', value: "Orden realizada por %{orderer_link}")
+    translate(locale: 'ca', key: 'conversations.accept.order_by', value: "Ordre realitzada per %{orderer_link}")
 
     translate(locale: 'es', key: 'transactions.total', value: "Total (IVA incluido):")
     translate(locale: 'ca', key: 'transactions.total', value: "Total (IVA inclòs):")
@@ -159,6 +162,9 @@ namespace :donalo do
 
     translate(locale: 'es', key: 'emails.receipt_to_payer.stripe.you_have_made_new_payment', value: "Has sido beneficiario de <b>%{listing_title}</b>. Por favor, accede a la conversación para coordinar un día y hora de entrega del producto.")
     translate(locale: 'ca', key: 'emails.receipt_to_payer.stripe.you_have_made_new_payment', value: "Has estat beneficiari de <b>%{listing_title}</b>. Si us plau, accedeix a la conversa per coordinar un dia i hora d'entrega del producte.")
+
+    translate(locale: 'es', key: 'emails.payment_receipt_to_payer.total', value: "Total (IVA incluido):")
+    translate(locale: 'ca', key: 'emails.payment_receipt_to_payer.total', value: "Total (IVA inclòs):")
 
     translate(locale: 'es', key: 'emails.transaction_confirmed.stripe.has_marked_request_as_confirmed', value: "%{other_party_full_name} ha marcado la orden de '%{request}' como completada. Puedes ahora dejar una valoración a %{other_party_given_name}.")
     translate(locale: 'ca', key: 'emails.transaction_confirmed.stripe.has_marked_request_as_confirmed', value: "%{other_party_full_name} ha marcat l'ordre de '%{request}' com completada. Pots ara deixar una valoració a %{other_party_given_name}.")
