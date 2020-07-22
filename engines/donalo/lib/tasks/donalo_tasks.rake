@@ -163,6 +163,8 @@ namespace :donalo do
     translate(locale: 'es', key: 'emails.transaction_confirmed.stripe.has_marked_request_as_confirmed', value: "%{other_party_full_name} ha marcado la orden de '%{request}' como completada. Puedes ahora dejar una valoración a %{other_party_given_name}.")
     translate(locale: 'ca', key: 'emails.transaction_confirmed.stripe.has_marked_request_as_confirmed', value: "%{other_party_full_name} ha marcat l'ordre de '%{request}' com completada. Pots ara deixar una valoració a %{other_party_given_name}.")
 
+    translate(locale: 'es', key: 'donalo.out_of_stock', value: "Este item está fuera de stock.")
+    translate(locale: 'ca', key: 'donalo.out_of_stock', value: "Aquest ítem està fora d'estoc.")
 
   end
 
