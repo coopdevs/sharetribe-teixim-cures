@@ -1010,7 +1010,8 @@ SET character_set_client = utf8;
  1 AS `display_name`,
  1 AS `phone_number`,
  1 AS `description`,
- 1 AS `image_updated_at`*/;
+ 1 AS `image_updated_at`,
+ 1 AS `email`*/;
 SET character_set_client = @saved_cs_client;
 DROP TABLE IF EXISTS `menu_link_translations`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -1567,7 +1568,7 @@ CREATE TABLE `transactions` (
 /*!50001 SET character_set_results     = utf8 */;
 /*!50001 SET collation_connection      = utf8_general_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50001 VIEW `masked_people` AS select `people`.`id` AS `id`,`people`.`uuid` AS `uuid`,`people`.`created_at` AS `created_at`,`people`.`updated_at` AS `updated_at`,`people`.`is_admin` AS `is_admin`,`people`.`locale` AS `locale`,`people`.`preferences` AS `preferences`,`people`.`active_days_count` AS `active_days_count`,`people`.`last_page_load_date` AS `last_page_load_date`,`people`.`test_group_number` AS `test_group_number`,`people`.`username` AS `username`,`people`.`reset_password_sent_at` AS `reset_password_sent_at`,`people`.`remember_created_at` AS `remember_created_at`,`people`.`sign_in_count` AS `sign_in_count`,`people`.`current_sign_in_at` AS `current_sign_in_at`,`people`.`last_sign_in_at` AS `last_sign_in_at`,`people`.`given_name` AS `given_name`,`people`.`family_name` AS `family_name`,`people`.`display_name` AS `display_name`,`people`.`phone_number` AS `phone_number`,`people`.`description` AS `description`,`people`.`image_updated_at` AS `image_updated_at` from `people` */;
+/*!50001 VIEW `masked_people` AS select `people`.`id` AS `id`,`people`.`uuid` AS `uuid`,`people`.`created_at` AS `created_at`,`people`.`updated_at` AS `updated_at`,`people`.`is_admin` AS `is_admin`,`people`.`locale` AS `locale`,`people`.`preferences` AS `preferences`,`people`.`active_days_count` AS `active_days_count`,`people`.`last_page_load_date` AS `last_page_load_date`,`people`.`test_group_number` AS `test_group_number`,`people`.`username` AS `username`,`people`.`reset_password_sent_at` AS `reset_password_sent_at`,`people`.`remember_created_at` AS `remember_created_at`,`people`.`sign_in_count` AS `sign_in_count`,`people`.`current_sign_in_at` AS `current_sign_in_at`,`people`.`last_sign_in_at` AS `last_sign_in_at`,`people`.`given_name` AS `given_name`,`people`.`family_name` AS `family_name`,`people`.`display_name` AS `display_name`,`people`.`phone_number` AS `phone_number`,`people`.`description` AS `description`,`people`.`image_updated_at` AS `image_updated_at`,`people`.`email` AS `email` from `people` */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
 /*!50001 SET collation_connection      = @saved_col_connection */;
@@ -2480,6 +2481,7 @@ INSERT INTO `schema_migrations` (version) VALUES
 ('20200224080321'),
 ('20200608104047'),
 ('20200609150707'),
-('20200706144036');
+('20200706144036'),
+('20200723183953');
 
 
