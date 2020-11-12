@@ -21,7 +21,12 @@ class ExportTaskResult < ApplicationRecord
       'Content-Disposition' => "attachment; filename=#{record.original_filename}"
     }
   },
-                           path: "file-exports/:class/:attachment/:id/:filename",
+                           # NOTE #donalo commenting :path here, since it breaks locale filesystem storage
+                           # which we currently use
+                           #
+                           # Issue reported here https://www.sharetribe.com/community/t/sharetribe-go-version-8-0-0-is-now-available/2177/14
+                           #
+                           # path: ":rails_root/public/system/file-exports/:class/:attachment/:id/:filename",
                            s3_permissions: :private
 
   do_not_validate_attachment_file_type :file
