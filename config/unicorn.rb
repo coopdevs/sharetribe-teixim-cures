@@ -1,4 +1,4 @@
-deploy_to = '/var/www/donalo/'
+deploy_to = ENV['SHARETRIBE_DEPLOY_TO'] || '/var/www/sharetribe/'
 shared_path = "#{deploy_to}/shared"
 
 working_directory "#{deploy_to}/current"
