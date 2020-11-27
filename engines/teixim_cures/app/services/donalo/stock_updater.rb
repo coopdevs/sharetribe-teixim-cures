@@ -1,4 +1,4 @@
-module Donalo
+module TeiximCures
   class StockUpdater
     def initialize(transaction_id:, rollback: false)
       @transaction_id = transaction_id

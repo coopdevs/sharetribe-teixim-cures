@@ -1,17 +1,17 @@
 $LOAD_PATH.push File.expand_path("lib", __dir__)
 
 # Maintain your gem's version:
-require "donalo/version"
+require "teixim_cures/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
-  spec.name        = "donalo"
-  spec.version     = Donalo::VERSION
-  spec.authors     = [""]
-  spec.email       = [""]
-  spec.homepage    = "https://github.com/coopdevs/sharetribe"
-  spec.summary     = "Centralized payments engine for donalo.org"
-  spec.description = "Centralized payments engine for donalo.org"
+  spec.name        = "teixim_cures"
+  spec.version     = TeiximCures::VERSION
+  spec.authors     = ["Pau Pérez"]
+  spec.email       = ["pau.perez@coopdevs.org"]
+  spec.homepage    = "https://github.com/coopdevs/sharetribe-teixim-cures.git"
+  spec.summary     = "Customizations engine for Teixim Cures"
+  spec.description = "Customizations engine for Teixim Cures"
   spec.license     = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

@@ -1,4 +1,4 @@
-module Donalo
+module TeiximCures
   class AvailabilityUpdater < StockUpdater
     def update
       listing.open = current_quantity > 0

@@ -1,2 +1,2 @@
-Donalo::Engine.routes.draw do
+TeiximCures::Engine.routes.draw do
 end

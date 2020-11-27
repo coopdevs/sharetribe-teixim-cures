@@ -19,9 +19,9 @@ GIT
       railties (>= 3.0)
 
 PATH
-  remote: engines/donalo
+  remote: engines/teixim_cures
   specs:
-    donalo (0.1.0)
+    teixim_cures (0.1.0)
       mysql2 (~> 0.4.1)
       rails (~> 5.2.3)
 
@@ -680,7 +680,6 @@ DEPENDENCIES
   delayed_paperclip (~> 3.0.1)
   devise (>= 4.7.1)
   devise-encryptable (~> 0.2.0)
-  donalo!
   dynamic_form (~> 1.1.4)
   email_spec (~> 2.1.1)
   factory_girl_rails (~> 4.8.0)
@@ -750,6 +749,7 @@ DEPENDENCIES
   statesman (~> 2.0.1)
   stringex (~> 2.7.1)
   stripe (~> 4.9.0)
+  teixim_cures!
   thinking-sphinx (~> 3.3.0)
   timecop (~> 0.8.1)
   transit-ruby (~> 0.8.602)

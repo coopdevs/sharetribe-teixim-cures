@@ -1,9 +1,9 @@
 require "rails_helper"
 
-describe Donalo::Engine::SendPaymentReceiptsOverride do
+describe TeiximCures::Engine::SendPaymentReceiptsOverride do
   describe '#seller_should_receive_receipt' do
     class DummyReceiver
-      include Donalo::Engine::SendPaymentReceiptsOverride
+      include TeiximCures::Engine::SendPaymentReceiptsOverride
     end
 
     it 'returns false' do

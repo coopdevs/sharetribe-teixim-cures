@@ -16,8 +16,8 @@ AllCops:
     - 'vendor/bundle/**/*'
     - '.pryrc'
     - 'Procfile.spec'
-    - 'engines/donalo/spec/dummy/**/*'
-    - 'engines/donalo/spec/spec_helper.rb'
+    - 'engines/teixim_cures/spec/dummy/**/*'
+    - 'engines/teixim_cures/spec/spec_helper.rb'
   TargetRubyVersion: 2.3
 
 Style/RegexpLiteral:

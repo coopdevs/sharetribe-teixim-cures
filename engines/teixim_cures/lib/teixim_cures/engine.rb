@@ -1,6 +1,6 @@
-module Donalo
+module TeiximCures
   class Engine < ::Rails::Engine
-    isolate_namespace Donalo
+    isolate_namespace TeiximCures
 
     config.generators do |g|
       g.test_framework :rspec
@@ -131,7 +131,7 @@ module Donalo
 
     # stock control
     initializer "donalo/monkey_patch/stock_control" do |app|
-      Donalo.app_root = app.root
+      TeiximCures.app_root = app.root
 
       PATCHED_OBJECTS = [
         ::Listing,
@@ -236,12 +236,12 @@ module Donalo
           private
 
           def update_stock!(transaction_id, rollback:)
-            Donalo::StockUpdater.new(
+            TeiximCures::StockUpdater.new(
               transaction_id: transaction_id,
               rollback: rollback
             ).update
 
-            Donalo::AvailabilityUpdater.new(
+            TeiximCures::AvailabilityUpdater.new(
               transaction_id: transaction_id
             ).update
 
