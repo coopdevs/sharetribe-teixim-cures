@@ -9,6 +9,8 @@ namespace :translations do
     #  translate(locale: 'es', key: 'listings.listing_actions.marketplace_fees_may_apply', value: "%{service_name} aplica una cuota de servicio por transacción que contribuye a mantener la plataforma")
     #  translate(locale: 'ca', key: 'listings.listing_actions.marketplace_fees_may_apply', value: "%{service_name} aplica una quota de servei per transacció que contribueix a mantenir la plataforma")
     #
+    translate(locale: 'es', key: 'customization.out_of_stock', value: "Este item está fuera de stock.")
+    translate(locale: 'ca', key: 'customization.out_of_stock', value: "Aquest item està fora d'estoc.")
   end
 
   def translate(locale:, key:, value:)
