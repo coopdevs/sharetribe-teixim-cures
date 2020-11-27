@@ -1,4 +1,0 @@
-/*hide price when creating/editing listing for non admins*/
-.price-container {
-  display: none;
-}
