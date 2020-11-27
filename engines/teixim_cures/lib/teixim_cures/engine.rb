@@ -13,7 +13,7 @@ module TeiximCures
     end
 
     # centralized payments
-    initializer "donalo/monkey_patch/centralized_payments" do |app|
+    initializer "sharetribe/monkey_patch/centralized_payments" do |app|
 
       # referencing monkey patched modules to ensure they are loaded
       PATCHED_OBJECTS = [
@@ -130,7 +130,7 @@ module TeiximCures
     end
 
     # stock control
-    initializer "donalo/monkey_patch/stock_control" do |app|
+    initializer "sharetribe/monkey_patch/stock_control" do |app|
       TeiximCures.app_root = app.root
 
       PATCHED_OBJECTS = [
