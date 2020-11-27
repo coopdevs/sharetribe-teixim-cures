@@ -1,5 +1,5 @@
 marketplace = MarketplaceService.create(
-  marketplace_name: 'donalo',
+  marketplace_name: 'sharetribe',
   marketplace_type: 'product',
   marketplace_country: 'ES',
   marketplace_language: 'es'
@@ -11,7 +11,7 @@ user = UserService::API::Users.create_user(
   {
     given_name: 'Troy',
     family_name: 'McClure',
-    email: 'donalo@example.com',
+    email: 'sharetribe@example.com',
     password: 'papapa22',
     locale: 'es'
   },
