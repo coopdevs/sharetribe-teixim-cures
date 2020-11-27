@@ -1,7 +1,7 @@
 namespace :stripe do
   desc 'Enable stripe'
   task enable: :environment do
-    community_id = Community.find_by_ident('donalo').id
+    community_id = 1
 
     TransactionService::API::Api.processes.create(
       community_id: community_id,
