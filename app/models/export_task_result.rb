@@ -21,7 +21,7 @@ class ExportTaskResult < ApplicationRecord
       'Content-Disposition' => "attachment; filename=#{record.original_filename}"
     }
   },
-                           # NOTE #donalo commenting :path here, since it breaks locale filesystem storage
+                           # NOTE commenting :path here, since it breaks locale filesystem storage
                            # which we currently use
                            #
                            # Issue reported here https://www.sharetribe.com/community/t/sharetribe-go-version-8-0-0-is-now-available/2177/14
