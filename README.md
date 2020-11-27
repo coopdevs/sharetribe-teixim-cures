@@ -27,3 +27,7 @@ docker-compose exec web bundle exec rake db:create db:structure:load db:seed
 ```
 
 Now, follow the message `db:seed` outputs to log into the marketplace and you'll be good to go.
+
+## This is not a fork
+
+This repo is not a Github fork of https://github.com/sharetribe/sharetribe. It's a standalone repo that uses Sharetribe's as Git upstream. As a result, you won't see any references to it from Github's UI but we can sync our repo with upstream when new releases are published.
