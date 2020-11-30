@@ -126,7 +126,7 @@ module TeiximCures
         end
       end
 
-      app.config.assets.precompile += %w(donalo/styles.css donalo/styles-non-admin.css)
+      app.config.assets.precompile += %w(teixim_cures/styles.css teixim_cures/styles-non-admin.css)
     end
 
     # stock control
