@@ -19,8 +19,6 @@ test:
 
 staging:
   secret_key_base: <%= ENV['SECRET_TOKEN'] %>
-  sharetribe_mail_from_address: 'no-reply@donalo.org'
 
 production:
   secret_key_base: <%= ENV['SECRET_TOKEN'] %>
-  sharetribe_mail_from_address: 'no-reply@donalo.org'

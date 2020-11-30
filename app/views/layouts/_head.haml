@@ -31,8 +31,8 @@
   = render :partial => "layouts/marketplace_head"
 
   - unless Rails.env.test?
-    = stylesheet_link_tag 'donalo/styles.css'
-    = stylesheet_link_tag 'donalo/styles-non-admin.css' unless @is_current_community_admin
+    = stylesheet_link_tag 'teixim_cures/styles.css'
+    = stylesheet_link_tag 'teixim_cures/styles-non-admin.css' unless @is_current_community_admin
 
   - if @hide_referer
     %meta{name: "referrer", content: "no-referrer"}

@@ -182,6 +182,6 @@ gem 'bootsnap', require: false
 gem "select2-rails"
 gem "cocoon"
 
-gem 'donalo', path: 'engines/donalo'
+gem 'teixim_cures', path: 'engines/teixim_cures'
 gem 'scenic'
 gem 'scenic-mysql_adapter'
