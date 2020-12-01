@@ -6888,3 +6888,7 @@ Style/ZeroLengthPredicate:
 # URISchemes: http, https
 Metrics/LineLength:
   Max: 268
+
+Rails/ActiveRecordOverride:
+  Exclude:
+    - 'app/models/landing_page_version/section/base.rb'
