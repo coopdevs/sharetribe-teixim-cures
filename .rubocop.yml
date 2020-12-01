@@ -28,6 +28,3 @@ Style/RegexpLiteral:
 # code.
 Style/FrozenStringLiteralComment:
   Enabled: false
-
-Rails/ActiveRecordOverride:
-  Enabled: false
