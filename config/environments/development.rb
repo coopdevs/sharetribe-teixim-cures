@@ -8,7 +8,7 @@ Rails.application.configure do
   # In the development environment your application's code is reloaded on
   # every request.  This slows down response time but is perfect for development
   # since you don't have to restart the webserver when you make code changes.
-  config.cache_classes = false
+  config.cache_classes = !!ENV["PROFILE"]
 
   # To autoload MailPreview, uncomment this line
   # (this is a hack which is fixed properly in Rails 4)
@@ -47,7 +47,7 @@ Rails.application.configure do
 
 
   # Do not eager load code on boot.
-  config.eager_load = false
+  config.eager_load = !!ENV["PROFILE"]
 
   # Show full error reports and disable caching
   config.consider_all_requests_local       = true
@@ -98,14 +98,30 @@ Rails.application.configure do
   config.active_support.deprecation = :log
 
   # Raise an error on page load if there are pending migrations.
-  config.active_record.migration_error = :page_load
+  config.active_record.migration_error = ENV["PROFILE"] ? false : :page_load
 
   # Highlight code that triggered database queries in logs.
-  config.active_record.verbose_query_logs = true
+  config.active_record.verbose_query_logs = !ENV["PROFILE"]
 
   # Expands the lines which load the assets
-  config.assets.debug = false
+  config.assets.debug = !ENV["PROFILE"]
   config.assets.quiet = true
+
+  if ENV["PROFILE"]
+    config.public_file_server.enabled = true
+    config.public_file_server.headers = {
+      'Cache-Control' => 'public, s-maxage=31536000, maxage=31536000',
+      'Expires' => "#{1.year.from_now.to_formatted_s(:rfc822)}"
+    }
+    config.assets.compile = false
+
+    # Prod-like logging
+    logger           = ActiveSupport::Logger.new(STDOUT)
+    logger.formatter = config.log_formatter
+    config.logger    = ActiveSupport::TaggedLogging.new(logger)
+
+    config.action_view.cache_template_loading = true
+  end
 
   # Raises error for missing translations
   config.action_view.raise_on_missing_translations = false
