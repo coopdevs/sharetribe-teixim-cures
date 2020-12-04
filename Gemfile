@@ -10,7 +10,7 @@ gem 'uglifier', '~> 3.2.0'
 gem 'sass-rails', '~> 5.0.6'
 gem 'compass-rails', '~> 3.0.2'
 
-gem 'jquery-rails', '~> 4.3.1'
+gem 'jquery-rails', '~> 4.4.0'
 
 # Bundle the extra gems:
 
