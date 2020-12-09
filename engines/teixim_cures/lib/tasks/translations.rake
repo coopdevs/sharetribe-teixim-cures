@@ -11,6 +11,10 @@ namespace :translations do
     #
     translate(locale: 'es', key: 'customization.out_of_stock', value: "Este item está fuera de stock.")
     translate(locale: 'ca', key: 'customization.out_of_stock', value: "Aquest item està fora d'estoc.")
+
+    translate(locale: 'es', key: 'admin.transaction_types.default_action_button_labels.offer', value: "Contacta")
+    translate(locale: 'ca', key: 'admin.transaction_types.default_action_button_labels.offer', value: "Contacta")
+    
   end
 
   def translate(locale:, key:, value:)
