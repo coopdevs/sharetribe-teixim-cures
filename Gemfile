@@ -77,7 +77,7 @@ gem "premailer-rails", '~> 1.10.3'
 gem "css_parser", '~> 1.7.0'
 gem 'stringex', '~> 2.7.1'
 gem 'paypal-sdk-permissions', '~> 1.96.4'
-gem 'paypal-sdk-merchant', '~> 1.116.0'
+gem 'paypal-sdk-merchant', '~> 1.117.2'
 gem 'airbrake', '~> 9.1.0'
 gem 'stripe', '~> 4.9.0'
 

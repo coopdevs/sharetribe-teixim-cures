@@ -342,7 +342,7 @@ GEM
       money (~> 6.8.1)
       railties (>= 3.0)
     msgpack (1.1.0)
-    multi_json (1.13.1)
+    multi_json (1.15.0)
     multi_test (0.1.2)
     multi_xml (0.6.0)
     multipart-post (2.0.0)
@@ -400,7 +400,7 @@ GEM
     paypal-sdk-core (0.3.4)
       multi_json (~> 1.0)
       xml-simple
-    paypal-sdk-merchant (1.116.0)
+    paypal-sdk-merchant (1.117.2)
       paypal-sdk-core (~> 0.3.0)
     paypal-sdk-permissions (1.96.4)
       paypal-sdk-core (~> 0.3.0)
@@ -717,7 +717,7 @@ DEPENDENCIES
   omniauth-rails_csrf_protection (~> 0.1.2)
   paperclip (~> 6.0.0)
   passenger (~> 6.0.1)
-  paypal-sdk-merchant (~> 1.116.0)
+  paypal-sdk-merchant (~> 1.117.2)
   paypal-sdk-permissions (~> 1.96.4)
   poltergeist
   possibly (~> 1.0.1)
