@@ -28,3 +28,10 @@ Style/RegexpLiteral:
 # code.
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+# This cop is causing the following error in CI:
+#
+#   An error occurred while Rails/ActiveRecordOverride cop was inspecting
+#   /home/circleci/project/app/models/landing_page_version/section/base.rb:27:4.
+Rails/ActiveRecordOverride:
+  Enabled: false
