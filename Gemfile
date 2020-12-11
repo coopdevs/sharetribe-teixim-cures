@@ -72,7 +72,7 @@ gem 'mercury-rails',
 
 gem 'countries', '~> 2.0.8'
 gem "mail_view", '~> 2.0.4'
-gem 'statesman', '~> 2.0.1'
+gem 'statesman', '~> 7.1.0'
 gem "premailer-rails", '~> 1.10.3'
 gem "css_parser", '~> 1.7.0'
 gem 'stringex', '~> 2.7.1'
@@ -148,7 +148,7 @@ group :test do
   # required for CircleCI automatic test balancing
   gem 'rspec_junit_formatter'
 
-  gem 'fake_stripe', git: 'https://github.com/ithouse/fake_stripe.git', ref: 'd188f6ad796f498a3d6e9b6b087172d8c150f325'
+  gem 'fake_stripe', git: 'https://github.com/ithouse/fake_stripe.git', ref: '56fe73dc420d161ecf9842739af7d857031ca1b2'
   gem 'poltergeist'
   gem 'puma'
   gem 'webdrivers'
@@ -185,3 +185,4 @@ gem "cocoon"
 gem 'teixim_cures', path: 'engines/teixim_cures'
 gem 'scenic'
 gem 'scenic-mysql_adapter'
+gem "fast-polylines"
