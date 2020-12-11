@@ -219,6 +219,7 @@ az-AZ:
         miles: ~
         show_only_nearby: ~
         allow_users_to_add_location: ~
+        fuzzy_location: ~
         listing_preferences: ~
         transaction_preferences: ~
         show_listing_publishing_date: ~
@@ -722,6 +723,14 @@ az-AZ:
           hero_title: ~
           hero_description: ~
           basic_details_tab: ~
+          cta_button: ~
+          cta_button_info: ~
+          button_type:
+            default: ~
+            button: ~
+            none: ~
+          button_content: ~
+          click_me: ~
         footer:
           footer_title: ~
           footer_style: ~
@@ -1394,7 +1403,7 @@ az-AZ:
       dismiss: ~
   feedback:
     feedback_subject: ~
-    feedback_body: "%{author_name_and_email} %{service_name} -dan aşağıdakı geribildirim göndərmişdir"
+    feedback_body: ~
     unlogged_user: ~
     anonymous_user: ~
   community_memberships:
@@ -2342,6 +2351,7 @@ az-AZ:
       origin:
         location: Yeri
         origin: ~
+        the_exact_location: ~
       send_button:
         save_listing: "Elanı yerləşdir"
         submit_for_review: ~
@@ -3072,18 +3082,12 @@ az-AZ:
     next_label: "Sonrakı &#8594;"
     page_gap: "&hellip;"
     page_entries_info:
-      single_page:
-        zero: "%{model} tapılmadı"
-        other: "%{count} %{model} göstətilir"
-      single_page_html:
-        zero: "%{model} tapılmadı"
-        other: "<b>&nbsp;%{count}</b> %{model} göstərilir"
       multi_page: "%{count}-dan %{from} - %{to} %{model} göstərilir"
       multi_page_html: "<b>%{count}-dan</b> <b>%{from}&nbsp;-&nbsp;%{to}</b> %{model} göstərilir"
     person:
       community_members_entries_info:
         multi_page: ~
-        multi_page_html: ~
+        multi_page_html: "Отображение%{model}<b>%{from}&nbsp;-&nbsp;%{to}}</b> из <b>%{accepted_count}</b> принятых%{accepted_model} и %{other_count}  других %{other_model}"
   stripe_accounts:
     admin_account_not_connected: ~
     contact_admin_link_text: "%{service_name} komandasına müraciət edin"
@@ -3228,6 +3232,9 @@ az-AZ:
       landing_page_version/section/video:
         text: ~
         youtube_video_id: ~
+      landing_page_version/section/hero:
+        cta_button_text: ~
+        cta_button_url: ~
   canada_states:
     AB: Alberta
     BC: "British Columbia"

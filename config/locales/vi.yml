@@ -229,6 +229,7 @@ vi:
         miles: dặm
         show_only_nearby: "Chỉ hiển thị các bài đăng xung quanh vị trí tìm kiếm"
         allow_users_to_add_location: ~
+        fuzzy_location: ~
         listing_preferences: "Danh mục yêu thích"
         transaction_preferences: ~
         show_listing_publishing_date: "Hiển thị ngày đăng trên bài đăng"
@@ -732,6 +733,14 @@ vi:
           hero_title: ~
           hero_description: ~
           basic_details_tab: ~
+          cta_button: ~
+          cta_button_info: ~
+          button_type:
+            default: ~
+            button: ~
+            none: ~
+          button_content: ~
+          click_me: ~
         footer:
           footer_title: ~
           footer_style: ~
@@ -1417,10 +1426,10 @@ vi:
       mark_as_refunded: ~
       dismiss: ~
   feedback:
-    feedback_subject: "Phản hồi mới từ %{service_name}"
-    feedback_body: "%{author_name_and_email} đã gửi phản hồi sau từ %{service_name}"
-    unlogged_user: "Người dùng chưa đăng nhập"
-    anonymous_user: "Người dùng ẩn danh"
+    feedback_subject: ~
+    feedback_body: ~
+    unlogged_user: ~
+    anonymous_user: ~
   community_memberships:
     access_denied:
       access_denied: "Truy cập đã bị từ chối"
@@ -2366,6 +2375,7 @@ vi:
       origin:
         location: "Địa điểm"
         origin: Gốc
+        the_exact_location: ~
       send_button:
         save_listing: Lưu
         submit_for_review: ~
@@ -3243,6 +3253,9 @@ vi:
       landing_page_version/section/video:
         text: ~
         youtube_video_id: ~
+      landing_page_version/section/hero:
+        cta_button_text: ~
+        cta_button_url: ~
   canada_states:
     AB: Alberta
     BC: "British Columbia"

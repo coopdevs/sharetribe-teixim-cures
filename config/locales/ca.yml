@@ -233,6 +233,7 @@ ca:
         select_distance_unit: "Mostrar distància a %{distance_units_selector}"
         km: km
         miles: milles
+<<<<<<< HEAD
         show_only_nearby: "Mostrar només anuncis propers a la búsqueda per ubicació"
         allow_users_to_add_location: "Permetre als usuaris afegir ubicació als seus perfils i anuncis, i mostrar la vista del mapa a la pàgina de resultats de cerca"
         fuzzy_location: "Mostra un cercle en comptes de la ubicació exacta"
@@ -265,6 +266,40 @@ ca:
         payment_preferences: "Sistema de pagaments"
         pre_approved_listings: "Reviseu tots els llistats abans que es publiquin"
         email_admins_about_new_transactions: "Envieu un correu electrònic als administradors sempre que s'iniciï una nova transacció"
+=======
+        show_only_nearby: ~
+        allow_users_to_add_location: ~
+        fuzzy_location: ~
+        listing_preferences: ~
+        transaction_preferences: ~
+        show_listing_publishing_date: ~
+        show_category_in_listing_list: ~
+        listing_comments_in_use: ~
+        email_preferences: ~
+        automatic_newsletters: ~
+        email_admins_about_new_members: ~
+        google_analytics_key: ~
+        twitter_handle: ~
+        update_settings: ~
+        automatically_confirmed_no_escrow: ~
+        automatically_confirmed_no_escrow_stripe_info: ~
+        buyer_transaction_fees_are_only_supported_with_stripe: ~
+        automatic_newsletter_frequency: ~
+        newsletter_daily: ~
+        newsletter_weekly: ~
+        delete_marketplace_title: ~
+        type_marketplace_domain: ~
+        type_marketplace_domain_placeholder: ~
+        once_you_delete: ~
+        are_you_sure: ~
+        i_understand_button: ~
+        last_community_updates: ~
+        you_will_be_redirected_to: ~
+        delete_this_marketplace: ~
+        payment_preferences: ~
+        pre_approved_listings: ~
+        email_admins_about_new_transactions: ~
+>>>>>>> v10.0.0
       manage_members:
         manage_members: Usuaris
         email: "Correu electrònic"
@@ -736,6 +771,7 @@ ca:
         content:
           title: "Contingut de la secció"
         hero:
+<<<<<<< HEAD
           hero_title: Hero
           hero_description: "Determina la imatge de fons per a la secció Hero. L'eslògan i la descripció vénen directament de la secció de %{link}."
           basic_details_tab: "la secció de 'Detalls bàsics'"
@@ -747,6 +783,19 @@ ca:
             none: Cap
           button_content: "Contingut del botó"
           click_me: Clica'm
+=======
+          hero_title: ~
+          hero_description: ~
+          basic_details_tab: ~
+          cta_button: ~
+          cta_button_info: ~
+          button_type:
+            default: ~
+            button: ~
+            none: ~
+          button_content: ~
+          click_me: ~
+>>>>>>> v10.0.0
         footer:
           footer_title: "Peu de pàgina"
           footer_style: "Estil del peu de pàgina"
@@ -1438,10 +1487,17 @@ ca:
       mark_as_refunded: "Marcar com a reembolsada"
       dismiss: "Descartar i fer el pagament"
   feedback:
+<<<<<<< HEAD
     feedback_subject: "Entrada nova del formulari de contacte a %{service_name}"
     feedback_body: "%{author_name_and_email}  ha enviat la següent entrada al formulari de contacte %{service_name} . Aquesta notificació s'envia a tots els administradors de %{service_name}."
     unlogged_user: "Un usuari sense connectar"
     anonymous_user: "Un usuari anònim"
+=======
+    feedback_subject: ~
+    feedback_body: ~
+    unlogged_user: ~
+    anonymous_user: ~
+>>>>>>> v10.0.0
   community_memberships:
     access_denied:
       access_denied: "Accés denegat"
@@ -2391,7 +2447,11 @@ ca:
       origin:
         location: Lloc
         origin: Origen
+<<<<<<< HEAD
         the_exact_location: "La ubicació exacta no es mostrarà a altres usuaris."
+=======
+        the_exact_location: ~
+>>>>>>> v10.0.0
       send_button:
         save_listing: "Publica fitxa"
         submit_for_review: "Enviar per a revisió"

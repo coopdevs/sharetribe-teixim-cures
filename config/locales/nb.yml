@@ -234,6 +234,7 @@ nb:
         miles: miles
         show_only_nearby: "Vis kun annonser i nærområdet med stedssøk"
         allow_users_to_add_location: ~
+        fuzzy_location: ~
         listing_preferences: Annonseinnstillinger
         transaction_preferences: Transaksjonsinnstillinger
         show_listing_publishing_date: "Vis dato annonsen ble publisert"
@@ -260,7 +261,7 @@ nb:
         last_community_updates: "Vær obs på at det er mulig at du og brukerne dine vil motta en siste nyhetsmelding fra markedsplassen."
         you_will_be_redirected_to: "Etter du har slettet markedsplassen din vil du bli videresendt til %{destination}. Du vil ikke kunne få tilgang til markedsplassen din mer."
         delete_this_marketplace: "Slett denne markedsplassen"
-        payment_preferences: ~
+        payment_preferences: Betalingssystem
         pre_approved_listings: ~
         email_admins_about_new_transactions: ~
       manage_members:
@@ -500,33 +501,33 @@ nb:
           initiated: "Venter på PayPal betaling"
           pending_ext: "Venter på PayPal betaling"
           none:
-            free: ~
+            free: "Gratis transaksjon"
           paypal:
-            free: ~
-            pending: ~
-            preauthorized: ~
-            accepted: ~
-            rejected: ~
-            paid: ~
-            confirmed: ~
-            canceled: ~
+            free: Samtale
+            pending: Venter
+            preauthorized: Forhåndsgodkjent
+            accepted: Akseptert
+            rejected: Avvist
+            paid: Betalt
+            confirmed: Fullført
+            canceled: Avbrutt
             disputed: ~
             initiated: ~
             pending_ext: ~
             refunded: ~
             dismissed: ~
           stripe:
-            free: ~
-            pending: ~
+            free: Meldinger
+            pending: Avventer
             preauthorized: ~
-            accepted: ~
-            rejected: ~
-            paid: ~
-            confirmed: ~
-            canceled: ~
+            accepted: Akseptert
+            rejected: Avvist
+            paid: Betalt
+            confirmed: Fullført
+            canceled: Avbrutt
             disputed: ~
-            initiated: ~
-            pending_ext: ~
+            initiated: "Venter Stripebetaling"
+            pending_ext: "Venter Stripebetaling"
             payment_intent_requires_action: ~
             payment_intent_action_expired: ~
             payment_intent_failed: ~
@@ -737,6 +738,14 @@ nb:
           hero_title: ~
           hero_description: ~
           basic_details_tab: ~
+          cta_button: ~
+          cta_button_info: ~
+          button_type:
+            default: ~
+            button: ~
+            none: ~
+          button_content: ~
+          click_me: ~
         footer:
           footer_title: ~
           footer_style: ~
@@ -923,9 +932,9 @@ nb:
         recipients:
           title: ~
           options:
-            all_users: ~
+            all_users: "Alle brukere"
             posting_allowed: ~
-            with_listing: ~
+            with_listing: "Brukere som har postet minst én annonse"
             with_listing_no_payment: ~
             with_payment_no_listing: ~
             no_listing_no_payment: ~
@@ -1314,8 +1323,8 @@ nb:
       payment_preauthorized_wo_sum: ~
       stripe:
         held_payment: ~
-        held_payment_wo_sum: ~
-        confirmed_request: ~
+        held_payment_wo_sum: "Godtok forespørselen. Betalingen holdes hos %{service_name} frem til handelen er markert som fullført."
+        confirmed_request: "Markerte handelen som fullført. Betalingen har allerede blitt overført til %{author_name} sin bankkonto eller vil bli overført snart."
       canceled_the_order: ~
       marked_as_refunded: ~
       dismissed_the_cancellation: ~
@@ -1420,10 +1429,10 @@ nb:
       mark_as_refunded: ~
       dismiss: ~
   feedback:
-    feedback_subject: "Ny tilbakemelding fra %{service_name}"
-    feedback_body: "%{author_name_and_email} har sendt følgende tilbakemelding fra %{service_name}"
-    unlogged_user: "Ulogget bruker"
-    anonymous_user: "Anonym bruker"
+    feedback_subject: ~
+    feedback_body: ~
+    unlogged_user: ~
+    anonymous_user: ~
   community_memberships:
     access_denied:
       access_denied: "Tilgang avvist"
@@ -2292,7 +2301,7 @@ nb:
       listing_is_rejected: ~
       approve_listing: ~
       reject_listing: ~
-      delete_listing: ~
+      delete_listing: "Slett annonse"
     map:
       open_in_google_maps: "Åpne i Google Maps"
     error:
@@ -2372,6 +2381,7 @@ nb:
       origin:
         location: Sted
         origin: Opprinnelse
+        the_exact_location: ~
       send_button:
         save_listing: "Lagre annonse"
         submit_for_review: ~
@@ -2419,7 +2429,7 @@ nb:
       housing: Steder
       items: Gjenstander
       list_view: Listevisning
-      listings: Listinger
+      listings: Annonser
       map_view: "Vis kart"
       offer_something: "La andre få vite!"
       offer_type: Tilbudstype
@@ -2686,8 +2696,8 @@ nb:
         other: "%{service_name} har restriksjoner. Du trenger en e-postadresse som viser at du er godkjent for å bli medlem."
       family_name: Etternavn
       given_name: Fornavn
-      i_accept_the_terms_and_privacy: ~
-      admin_emails_consent: ~
+      i_accept_the_terms_and_privacy: "Jeg godtar %{terms} og %{privacy}"
+      admin_emails_consent: "Jeg godtar å motta e-poster fra %{service_name} og forstår at jeg kan ombestemme meg når som helst."
       invalid_invitation_code: "Invitasjonskode er ikke gyldig."
       invitation_code: Invitasjonskode
       not_required: ", ikke påkrevd"
@@ -2708,7 +2718,7 @@ nb:
       and_gave_following_feedback: "og gav følgende tilbakemelding"
     profile_listings:
       no_image: "Uten bilder"
-      manage_listings: ~
+      manage_listings: "Administrator mine annonser"
     show:
       contact: "Kontakt %{person}"
       about_me: "Om meg:"
@@ -3086,7 +3096,7 @@ nb:
       signup: "Registrer deg"
       admin_dashboard: Administrasjonspanel
       language: Språk
-      listings: ~
+      listings: "Mine annonser"
     utils:
       km: km
       mi: miles
@@ -3266,6 +3276,9 @@ nb:
       landing_page_version/section/video:
         text: ~
         youtube_video_id: ~
+      landing_page_version/section/hero:
+        cta_button_text: ~
+        cta_button_url: ~
   canada_states:
     AB: Alberta
     BC: "British Columbia"

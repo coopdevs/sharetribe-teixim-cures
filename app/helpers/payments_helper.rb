@@ -28,6 +28,10 @@ module PaymentsHelper
       separator: "-",
       phone_number: '+1 866 123 4567'
     },
+    CZ: {
+      account_number: {title: 'IBAN', format: 'CZ6508000000192000145399', regexp: 'CZ[0-9]{2}[0-9]{4}[0-9]{6}[0-9]{10}', test_regexp: 'CZ'+TEST_IBAN },
+      phone_number: '+420 607 5552 71'
+    },
     DK: {
       account_number: {title: 'IBAN', format: 'DK5000400440116243', regexp: 'DK[0-9]{2}[0-9]{14}', test_regexp: 'DK'+TEST_IBAN },
       phone_number: '+45 12 13 12 30'
@@ -112,6 +116,10 @@ module PaymentsHelper
     PT: {
       account_number: {title: 'IBAN', format: 'PT50123443211234567890172', regexp: 'PT[0-9]{2}[0-9]{4}[0-9]{4}[0-9]{11}[0-9]{2}', test_regexp: 'PT'+TEST_IBAN },
       phone_number: '+351 12 345 7698'
+    },
+    RO: {
+      account_number: {title: 'IBAN', format: 'RO49AAAA1B31007593840000', regexp: 'RO[0-9]{2}[A-Z]{4}[A-Z0-9]{16}', test_regexp: 'RO'+TEST_IBAN },
+      phone_number: '+40 123 456 789'
     },
     SG: {
       account_number: {format: '123456789012', regexp: '[0-9]{6,12}', test_regexp: '[0-9]{6,12}' },
