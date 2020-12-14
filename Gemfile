@@ -116,7 +116,7 @@ group :development, :test do
 end
 
 group :development, :staging do
-  gem 'meta_request', '~> 0.6.0'
+  gem 'meta_request', '~> 0.7.2'
 end
 
 group :development do
