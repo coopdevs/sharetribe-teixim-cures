@@ -130,7 +130,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '~> 3.16.2'
+  gem 'capybara', '~> 3.34.0'
   gem "rspec-rails", '~> 3.8.2'
 
   gem 'cucumber-rails', '~> 1.6.0', require: false # require: false is needed for cucumber-rails
