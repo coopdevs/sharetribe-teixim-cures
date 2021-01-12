@@ -31,3 +31,11 @@ Now, follow the message `db:seed` outputs to log into the marketplace and you'll
 ## This is not a fork
 
 This repo is not a Github fork of https://github.com/sharetribe/sharetribe. It's a standalone repo that uses Sharetribe's as Git upstream. As a result, you won't see any references to it from Github's UI but we can sync our repo with upstream when new releases are published.
+
+## Operations
+
+The infrastructure is made of a single VPS server managed with Ansible. Check out https://gitlab.com/coopdevs/teixim-cures-provisioning/.
+
+### Deployment
+
+We follow continuous delivery deploying from master as soon as we merge pull requests using the aforementioned Ansible scripts. 
