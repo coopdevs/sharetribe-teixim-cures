@@ -1,4 +1,4 @@
-require "teixim_cures/engine"
+require 'teixim_cures/engine'
 
 module TeiximCures
   # Your code goes here...
