@@ -20,34 +20,6 @@ url = URLUtils.append_query_param(
   marketplace.full_domain(with_protocol: true), "auth", user_token
 )
 
-NumericField.create(
-  community: Community.first,
-  min: 1,
-  max: 999,
-  categories: [Category.first],
-  search_filter: false,
-  names: [
-    CustomFieldName.new(
-      value: 'Cantidad mínima a solicitar',
-      locale: 'es'
-    ),
-  ]
-)
-
-NumericField.create(
-  community: Community.first,
-  min: 1,
-  max: 999,
-  categories: [Category.first],
-  search_filter: false,
-  names: [
-    CustomFieldName.new(
-      value: 'Cantidad disponible',
-      locale: 'es'
-    ),
-  ]
-)
-
 Rake::Task['stripe:enable'].invoke
 
 # Enable customizable footer. Note it also needs external_plan_service_in_use
