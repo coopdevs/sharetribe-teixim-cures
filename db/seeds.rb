@@ -2,24 +2,18 @@ marketplace = MarketplaceService.create(
   marketplace_name: 'sharetribe',
   marketplace_type: 'product',
   marketplace_country: 'ES',
-  marketplace_language: 'es'
+  marketplace_language: 'es',
+  show_location: false
 )
 marketplace.locales << 'ca'
 marketplace.save!
 
-user = UserService::API::Users.create_user(
-  {
-    given_name: 'Troy',
-    family_name: 'McClure',
-    email: 'sharetribe@example.com',
-    password: 'papapa22',
-    locale: 'es'
-  },
-  marketplace.id
-)
-user = user.data
+require Rails.root.join('db/seeds/users.rb')
+require Rails.root.join('db/seeds/listings.rb')
+require Rails.root.join('db/seeds/categories.rb')
 
-auth_token = UserService::API::AuthTokens.create_login_token(user[:id])
+user = Person.find_by(given_name: 'Troy')
+auth_token = UserService::API::AuthTokens.create_login_token(user.id)
 auth_token = AuthToken.first
 user_token = auth_token[:token]
 url = URLUtils.append_query_param(
@@ -64,7 +58,5 @@ PlanService::Store::Plan::PlanModel.create(
   features: {"whitelabel"=>true, "admin_email"=>true, "footer"=>true},
   expires_at: Time.current + 20.years
 )
-
-require Rails.root.join('db/seeds/categories.rb')
 
 puts "\n\e[33mYou can now navigate to your markeplace at #{url}"
