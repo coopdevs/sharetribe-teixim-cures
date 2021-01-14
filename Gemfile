@@ -120,7 +120,7 @@ group :development, :staging do
 end
 
 group :development do
-  gem 'rb-fsevent', '~> 0.9.8', require: false
+  gem 'rb-fsevent', '~> 0.10.4', require: false
   gem 'guard-rspec', '~> 4.7.3', require: false
   gem 'listen', '~> 3.1.5'
   gem 'annotate', '~> 2.7.5'
