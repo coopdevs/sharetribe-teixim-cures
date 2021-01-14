@@ -10,7 +10,7 @@ services:
       MYSQL_DATABASE: sharetribe_development
       MYSQL_ROOT_PASSWORD: secret
     volumes:
-      - ./tmp/mysql:/var/lib/mysql
+      - mysql:/var/lib/mysql
   web:
     tty: true
     stdin_open: true
@@ -83,3 +83,6 @@ services:
       - mysql
     environment:
       DATABASE_URL: mysql2://sharetribe:secret@mysql/sharetribe_development
+
+volumes:
+   mysql:
