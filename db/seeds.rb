@@ -2,7 +2,8 @@ marketplace = MarketplaceService.create(
   marketplace_name: 'sharetribe',
   marketplace_type: 'product',
   marketplace_country: 'ES',
-  marketplace_language: 'es'
+  marketplace_language: 'es',
+  show_location: false
 )
 marketplace.locales << 'ca'
 marketplace.save!
