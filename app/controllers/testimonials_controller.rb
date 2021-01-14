@@ -24,6 +24,7 @@ class TestimonialsController < ApplicationController
   end
 
   def new
+    byebug
     transaction = Transaction.find(params[:message_id])
     testimonial = Testimonial.new
     render(locals: { transaction: transaction, testimonial: testimonial})
