@@ -135,7 +135,7 @@ group :test do
 
   gem 'cucumber-rails', '~> 1.6.0', require: false # require: false is needed for cucumber-rails
 
-  gem 'selenium-webdriver', '~> 3.141.0'
+  gem 'selenium-webdriver', '~> 3.142.7'
 
   # Launchy is needed by Capybara, e.g. save_and_open command needs Launchy to open a browser
   gem 'launchy', '~> 2.1'
