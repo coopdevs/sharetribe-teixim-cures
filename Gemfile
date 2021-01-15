@@ -89,7 +89,7 @@ gem 'public_suffix', '~> 2.0.5' # Needed currently to set GA hostname right, pro
 gem 'activerecord-session_store', '~> 1.1.3'
 
 gem 'faraday', '~> 0.13.0'
-gem 'faraday_middleware', '~> 0.11.0'
+gem 'faraday_middleware', '~> 0.14.0'
 gem 'faraday-encoding', '~> 0.0.4'
 
 gem "react_on_rails", ">= 11.3.0"
