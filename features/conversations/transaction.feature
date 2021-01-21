@@ -22,6 +22,7 @@ Feature: Single transaction
     When I visit transaction page of that listing
     Then I should see "Massage" within "h2"
     Then I should see "Drive Me Nuts" within ".message-row:nth-child(1)"
+    Then I should see "Finish transaction" within ".message-reply-form"
 
   Scenario: Buyer sees paid transaction
     Given there is a listing with title "car spare parts" from "kassi_testperson1" with category "Items" and with listing shape "Selling For Profit"

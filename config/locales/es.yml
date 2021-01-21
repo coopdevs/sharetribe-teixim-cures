@@ -1355,6 +1355,7 @@ es:
       message_sent_by: "Mensaje enviado por"
       message_sent_to: "Mensaje enviado a"
       send_reply: "Enviar respuesta"
+      new_testimonial: "Finaliza transacción"
       write_a_reply: "Escribe una respuesta:"
       conversation_about_listing: "Con %{person} acerca de %{listing}"
       conversation_with_user: "Con %{person}"

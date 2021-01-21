@@ -12,8 +12,3 @@
 
       %div{:id => "transaction_status"}
         = render :partial => "transactions/status/status", :locals => { :__transaction_model => @transaction, role: role, is_author: is_author }
-
-        - if @transaction.starter == @current_user
-          = button_to t("conversations.show.new_testimonial"),
-              new_person_message_feedback_path(@current_user.id, message_id: @transaction),
-              :type => "button"
