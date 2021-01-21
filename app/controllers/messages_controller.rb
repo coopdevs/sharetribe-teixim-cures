@@ -22,9 +22,6 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
     if @message.save
       Delayed::Job.enqueue(MessageSentJob.new(@message.id, @current_community.id))
-
-      conversation = Conversation.find(params[:message][:conversation_id])
-      AskForTestimonial.new(conversation.transaction, @current_community).call
     else
       flash[:error] = "reply_cannot_be_empty"
     end
