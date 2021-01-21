@@ -9,8 +9,8 @@ marketplace.locales << 'ca'
 marketplace.save!
 
 require Rails.root.join('db/seeds/users.rb')
-require Rails.root.join('db/seeds/listings.rb')
 require Rails.root.join('db/seeds/categories.rb')
+require Rails.root.join('db/seeds/listings.rb')
 
 user = Person.find_by(given_name: 'Troy')
 auth_token = UserService::API::AuthTokens.create_login_token(user.id)
