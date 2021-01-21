@@ -20,7 +20,12 @@ url = URLUtils.append_query_param(
   marketplace.full_domain(with_protocol: true), "auth", user_token
 )
 
+# We enable and mark Stripe as verified but it's not. Don't expect it to work in development.
+# This lets us render the listing page including the "Powered by Stripe" string.
 Rake::Task['stripe:enable'].invoke
+settings = PaymentSettings.find_by(community_id: 1)
+settings.api_verified = true
+settings.save!
 
 # Enable customizable footer. Note it also needs external_plan_service_in_use
 # set to true.
