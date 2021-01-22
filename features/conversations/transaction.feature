@@ -24,6 +24,14 @@ Feature: Single transaction
     Then I should see "Drive Me Nuts" within ".message-row:nth-child(1)"
     Then I should see "Finish transaction" within ".message-reply-form"
 
+  Scenario: Buyer can write a testimonial of a free transaction
+    Given there is a listing with title "Massage" from "kassi_testperson1" with category "Services" and with listing shape "Requesting"
+    Given there is a message "Drive Me Nuts" from "kassi_testperson2" about that listing
+    Given I am logged in as "kassi_testperson2"
+    When I visit transaction page of that listing
+    And I follow "Finish transaction"
+    Then I should see "Give feedback to"
+
   Scenario: Buyer sees paid transaction
     Given there is a listing with title "car spare parts" from "kassi_testperson1" with category "Items" and with listing shape "Selling For Profit"
     And the price of that listing is 100.00 EUR
@@ -36,6 +44,7 @@ Feature: Single transaction
     Then I should see "Waiting for Kassi to accept the request. As soon as Kassi accepts, you will be charged." within "#transaction_status"
     Then I should see "Payment authorized: €100" within ".message-row:nth-child(1)"
     Then I should see "Hear, Hear" within ".message-row:nth-child(2)"
+    Then I should not see "Finish transaction"
 
   Scenario: Buyer sees paid transaction per hour
     Given there is a listing with title "Massage" from "kassi_testperson1" with category "Services" and with listing shape "Offering Services"
