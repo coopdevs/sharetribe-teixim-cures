@@ -7,7 +7,11 @@
       = f.label :content, t("conversations.show.write_a_reply")
       = f.text_area :content, :class => "reply_form_text_area"
       = f.hidden_field :conversation_id
-      = f.button t("conversations.show.send_reply")
+
+      = f.button t("conversations.show.send_reply"), style: "display: inline-block; margin-right: 0.75em"
+      - if @transaction.present? && @transaction.current_state == 'free'
+        = link_to t("conversations.show.new_testimonial"),
+            new_person_message_feedback_path(@current_user.id, message_id: @transaction.id)
 
 #messages
   = render :partial => "conversations/message", :collection => messages, as: :message_or_action

@@ -1356,6 +1356,7 @@ ca:
       message_sent_by: "Missatge enviat per"
       message_sent_to: "Missatge enviat a"
       send_reply: "Envia resposta"
+      new_testimonial: "Finalitza transacció"
       write_a_reply: "Escriu una resposta:"
       conversation_about_listing: "Amb %{person} sobre %{listing}"
       conversation_with_user: "Amb %{person}"
