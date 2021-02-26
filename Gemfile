@@ -96,7 +96,7 @@ gem "react_on_rails", ">= 11.3.0"
 
 gem 'sitemap_generator', '~> 5.3.1'
 
-gem "i18n-js", '~> 3.0.0'
+gem "i18n-js", '~> 3.8.1'
 
 # A store scoped to the request object for caching
 gem "request_store", '~> 1.3.2'
