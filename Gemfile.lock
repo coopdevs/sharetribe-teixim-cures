@@ -231,7 +231,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     faraday-encoding (0.0.4)
       faraday
-    faraday_middleware (0.11.0.1)
+    faraday_middleware (0.14.0)
       faraday (>= 0.7.4, < 1.0)
     fast-polylines (1.0.0)
     ffi (1.10.0)
@@ -345,7 +345,7 @@ GEM
     multi_json (1.15.0)
     multi_test (0.1.2)
     multi_xml (0.6.0)
-    multipart-post (2.0.0)
+    multipart-post (2.1.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     mysql2 (0.4.10)
@@ -686,7 +686,7 @@ DEPENDENCIES
   fake_stripe!
   faraday (~> 0.13.0)
   faraday-encoding (~> 0.0.4)
-  faraday_middleware (~> 0.11.0)
+  faraday_middleware (~> 0.14.0)
   fast-polylines
   ffi (>= 1.9.25)
   flying-sphinx (~> 1.2.0)
